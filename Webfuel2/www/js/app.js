@@ -9,7 +9,7 @@ angular.module('webfuel', ['ionic', 'ngCordova','webfuel.controllers'])
   $ionicPlatform.ready(function() {
     if(window.cordova && window.cordova.plugins.Keyboard) {
       // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-      // for form inputs)
+      // for form inputs)hh
       cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
 
       // Don't remove this line unless you know what you are doing. It stops the viewport
