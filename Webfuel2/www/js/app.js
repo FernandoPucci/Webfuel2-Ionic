@@ -32,7 +32,7 @@ angular.module('webfuel', ['ionic', 'ngCordova','webfuel.controllers'])
   $stateProvider
 
   // setup an abstract state for the tabs directive
-    .state('tab', {
+  .state('tab', {
     url: '/tab',
     abstract: true,
     templateUrl: 'templates/tabs.html'
@@ -50,6 +50,15 @@ angular.module('webfuel', ['ionic', 'ngCordova','webfuel.controllers'])
     }
   })
 
+  .state('tab.list-calculo', {
+    url: '/tab-list-calculo',
+    views: {
+      'tab-list-calculo': {
+        templateUrl: 'templates/tab-list-calculo.html',
+        controller: 'CalculoCtrl'
+      }
+    }
+  })
   //PARA CADA ABA ADICIONADA EM 'tabs.html' ADICIONAR O .state AQUI
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/tab/calculo');

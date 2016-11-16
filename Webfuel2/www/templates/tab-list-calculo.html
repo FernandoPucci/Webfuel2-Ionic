@@ -1,0 +1,15 @@
+<ion-view view-title={{app}}>
+  <ion-content class="padding">
+    <h2>Últimos Cálculos</h2>
+ 
+
+    <div class="list">
+
+          <ion-list ng-controller="CalculoCtrl">
+              <ion-item ng-repeat="calculo in ultimosCalculos">             {{calculo.vlrGasolina}} - {{calculo.vlrAlcool}} - {{calculo.data| date:'dd/MM/yyyy'}}
+              </ion-item>
+          </ion-list>
+
+    </div>
+    </ion-content>
+  </ion-view>

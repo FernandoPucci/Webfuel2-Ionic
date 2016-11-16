@@ -32,6 +32,35 @@ angular.module('webfuel.controllers', [])
 
     $scope.app = '..:: WebFuel2';
 
+    //TESTES
+    $scope.date = new Date();
+
+     $scope.shouldShowDelete = false;
+     $scope.shouldShowReorder = false;
+     $scope.listCanSwipe = true
+
+    //model para lista de calculos
+    $scope.ultimosCalculos = [
+      {
+        vlrAlcool:2.69,
+        vlrGasolina:3.70,
+        vlrResultado : '',
+        data : new Date()
+      },
+            {
+        vlrAlcool:2.67,
+        vlrGasolina:3.69,
+        vlrResultado : '',
+        data : new Date()
+      },
+            {
+        vlrAlcool:2.54,
+        vlrGasolina:3.49,
+        vlrResultado : '',
+        data : new Date()
+      }
+    ]; 
+
     //model para calculo
     $scope.calculo = [
       {
