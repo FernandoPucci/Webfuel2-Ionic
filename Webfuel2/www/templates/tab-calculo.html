@@ -1,0 +1,34 @@
+<ion-view view-title={{app}}>
+  <ion-content class="padding">
+    <h2>Cálculo Combustível</h2>
+    <p>
+      Insira o valor de cada combustível:
+    </p>
+    <div class="list">
+        
+        <label id="lblAlcool"  class="item item-input item-stacked-label">
+            <span class="input-label">Álcool:</span>
+            <input type="number" name="txtAlcool" placeholder="Digite aqui o valor do Álcool..." ng-model="calculo.vlrAlcool"/>
+        </label>
+        
+        <label id="lblGasolina"  class="item item-input item-stacked-label">
+            <span class="input-label"">Gasolina:</span>
+            <input type="number" name="txtGasolina" placeholder="Digite aqui o valor da Gasolina..." ng-model="calculo.vlrGasolina"/>
+        </label>
+        <br/>
+          <button class="button button-block button-positive" ng-click="calcular()">
+            Calcular!
+          </button>
+
+          <button class="button button-block button-positive" ng-click="limpar()">
+            Limpar
+          </button>
+
+          <label id="lblResultado" ng-hide="!calculo.exibir" class="item item-input item-stacked-label">
+            <span class="input-label">Melhor abastecer com :</span>
+            <input type="text" name="txtResultado"  ng-model="calculo.vlrResultado"/>
+        </label>
+
+      </div>
+    </ion-content>
+  </ion-view>
